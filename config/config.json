@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-fx-router-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spFxRouter/SpFxRouterWebPart.js",
+          "manifest": "./src/webparts/spFxRouter/SpFxRouterWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpFxRouterWebPartStrings": "lib/webparts/spFxRouter/loc/{locale}.js"
+  }
+}
