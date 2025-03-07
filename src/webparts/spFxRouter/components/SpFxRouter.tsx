@@ -1,7 +1,7 @@
 import * as React from "react";
 import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
+import CreateOrder from "./CreateOrder";
+import Dashboard from "./Dashboard";
 //import Contact from "./Contact";
 
 const SPFxRouterWebPart: React.FC = () => {
@@ -11,21 +11,18 @@ const SPFxRouterWebPart: React.FC = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+            <Link to="/">Dashboard</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
+            <Link to="/CreateOrder">Create Order</Link>
             </li>
           </ul>
         </nav>
 
         {/* Define Routes */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/CreateOrder" element={<CreateOrder />} />
+          <Route path="/" element={<Dashboard />} />
         </Routes>
       </div>
     </Router>
